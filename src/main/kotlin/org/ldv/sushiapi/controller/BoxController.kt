@@ -4,13 +4,13 @@ import org.springframework.http.ResponseEntity
 import org.springframework.web.bind.annotation.*
 import org.ldv.sushiapi.dao.BoxDao
 import org.ldv.sushiapi.dto.BoxDtoApi
-
+import org.ldv.sushiapi.service.boxToBoxDtoApi
 
 
 @RestController
 @RequestMapping( "/api")
 @CrossOrigin
-open class BoxController(val boxDao: BoxDao) {
+class BoxController(val boxDao: BoxDao) {
 
     @GetMapping( "/boxes")
     @CrossOrigin(origins = ["*"])
