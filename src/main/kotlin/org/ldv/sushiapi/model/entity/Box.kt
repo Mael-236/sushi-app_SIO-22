@@ -2,6 +2,8 @@ package org.ldv.sushiapi.model.entity
 
 import jakarta.persistence.*
 
+@Entity
+@Table(name = "boxes")
 open class Box(
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
